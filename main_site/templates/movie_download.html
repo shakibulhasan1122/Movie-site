@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+
+<div style="text-align: center;position: absolute;top: 25%;left: 30%;">
+<div class="row">
+    <div class="col-sm-3">
+        <div class="card" style="width:450px;height: auto;">
+            <img class="card-img-top" src="{{movie.image.url}}" alt="" style="width: 250px; height:250px ;align-self: center;">
+            <div class="card-body">
+              <h4 class="card-title">{{movie.movie_title}}</h4>
+              <h5 class="card-title">{{movie.category}}</h5>
+              <h5 class="card-title">{{movie.gen}}</h5>
+              <a href="https://www.{{movie.link}}" class="btn btn-primary" target="_blank">Download</a>
+              <br>
+              
+              </form>
+            </div>
+          </div>
+    </div>
+  </div> 
+</div>  
+
+
+{% endblock %}
